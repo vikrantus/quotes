@@ -7,8 +7,8 @@ const quotes = require("./quotes.json");
 const init = async () => {
 
     const server = Hapi.server({
-      port: process.env.HAPI_PORT || 3006,
-      host: process.env.HAPI_HOST || 'localhost',
+      port: process.env.PORT || 4000,
+      host: process.env.HOST || '0.0.0.0',
       routes: {
         cors: true,
       }
